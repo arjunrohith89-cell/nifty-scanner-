@@ -15,8 +15,9 @@ VOL_MULTIPLIER = 1.2
 ENFORCE_MARKET_TREND = True
 
 # Paste your BRAND NEW Telegram Token from BotFather here:
-TG_TOKEN = 8905260026:AAHXExujNUHsGbGbldHiEsGETsk-OMTXc0w
-TG_CHAT_ID = "945498377"
+import os
+TG_TOKEN = os.getenv("TG_TOKEN", "")
+TG_CHAT_ID = os.getenv("TG_CHAT_ID", "")
 # ------------------------------
 
 SESSION = requests.Session()
